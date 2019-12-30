@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Refrigerator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/refrigerator_green_500</item>
+        <item name="colorOnPrimary">@color/refrigerator_yellow_500</item>
+        <item name="colorPrimaryDark">@color/refrigerator_green_700</item>
+        <item name="colorOnSurface">@color/refrigerator_black</item>
+        <item name="colorAccent">@color/refrigerator_green_700</item>
+        <item name="colorSurface">@color/refrigerator_gray_50</item>
+        <item name="colorSecondary">@color/refrigerator_yellow_500</item>
+    </style>
+
+    <style name="Theme.Refrigerator" parent="Base.Theme.Refrigerator"/>
+
+    <style name="Theme.Refrigerator.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Refrigerator.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="TextAppearance.Refrigerator.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5" >
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Refrigerator</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_refrigerator_title">My Refrigerator</string>
+    <string name="food_list_title">Food list</string>
+    <string name="refrigerator_empty">empty</string>
+    <string name="add_food">add food</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="refrigerator_black">#de000000</color>
+    <color name="refrigerator_gray_50">#fafafa</color>
+    <color name="refrigerator_gray_50_a600">#99fafafa</color>
+    <color name="refrigerator_green_300">#6dc790</color>
+    <color name="refrigerator_green_500">#49bb79</color>
+    <color name="refrigerator_green_700">#005d2b</color>
+    <color name="refrigerator_green_900">#1a231e</color>
+    <color name="refrigerator_white">#deffffff</color>
+    <color name="refrigerator_yellow_300">#f8f99f</color>
+    <color name="refrigerator_yellow_500">#ffff63</color>
+</resources>

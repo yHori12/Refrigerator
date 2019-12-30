@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.refrigerator.viewmodel.FoodListItemViewModel"/>
+    </data>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/food_item_image_height"
+                android:layout_height="@dimen/food_item_image_height"
+                android:scaleType="centerCrop"
+                app:imageFromUrl="@{viewModel.food.imageUrl}"
+                android:background="@color/cardview_dark_background"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/plant_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:text="@{viewModel.food.name}"
+                tools:text="キャベツ"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+            <TextView
+                android:id="@+id/stocking_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                tools:text="2019/11/3"
+                android:text="キャベツ"
+                android:gravity="center_horizontal"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintBottom_toTopOf="@id/expiration_date"
+                android:textAppearance="?attr/textAppearanceSubtitle2"/>
+
+            <TextView
+                android:id="@+id/expiration_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                tools:text="2019/11/3"
+                android:text="キャベツ"
+                android:gravity="center_horizontal"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textAppearance="?attr/textAppearanceSubtitle2"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
